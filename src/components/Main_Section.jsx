@@ -29,7 +29,7 @@ function Main_Section() {
               vitae.
             </p>
             <div>
-              <a href="#" className="btn hireme-btn">
+              <a href="#contact"  className="btn hireme-btn">
                 Hire Me
               </a>
             </div>

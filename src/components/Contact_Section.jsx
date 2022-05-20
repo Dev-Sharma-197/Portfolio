@@ -2,12 +2,12 @@ import React from 'react'
 
 function Contact_Section({map}) {
   return (
-    <section className="section section-contact">
+    <section id='contact' className="section section-contact">
         <div className="container">
             <h2 className="common-heading">Contact Us</h2>
         </div>
         {map}
-        <div className="section-contact-main contact-container">
+        <div  className="section-contact-main contact-container">
             <form action="https://formspree.io/f/xoqrykrl" method="POST">
                 <div className="grid grid-two-column">
                     <div>
