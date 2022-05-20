@@ -58,16 +58,19 @@ function Footer() {
 
         <div className="container">
           <div className="f-social-icons">
-            <a href="#" target='_blank' >
+            <a href="https://www.instagram.com/dev_sharma019/" target='_blank' >
               <ion-icon name='logo-instagram' ></ion-icon>
             </a>
 
-            <a href="#" target='_blank' >
+            <a href="https://discord.com/channels/dev_sharma#9697" target='_blank' >
               <ion-icon name='logo-discord' ></ion-icon>
             </a>
 
-            <a href="#" target='_blank' >
+            <a href="https://www.linkedin.com/in/dev-shar-ma/" target='_blank' >
               <ion-icon name='logo-linkedin' ></ion-icon>
+            </a>          
+            <a href="https://github.com/Dev-Sharma-197" target='_blank' >
+              <ion-icon name='logo-github' ></ion-icon>
             </a>          
           </div>
 

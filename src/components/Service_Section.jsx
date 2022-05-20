@@ -6,37 +6,37 @@ function Service_Section() {
       title: "Web Design",
       img: "desktop-outline",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Interactive and Minimalistic design with full of animations and transitions. Eye Catching Design for all devices.",
     },
     {
       title: "Web Development",
-      img: "desktop-outline",
+      img: "code-working",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Web Development in various style for web pages like Dynamic, Static, Single-paged and Multi-paged web apps.",
     },
     {
-      title: "Photography",
-      img: "desktop-outline",
+      title: "React Development",
+      img: "logo-react",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Frontend Development in React-JS library with esuring the performace, integration and reusable code with good practices.",
     },
     {
-      title: "Cliping Path",
-      img: "desktop-outline",
+      title: "NodeJS Development",
+      img: "logo-nodejs",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Backend Development in Node-JS with all fucntionalities like Authentication, Privacy, Server Side Rendering and Implementation of Database.",
     },
     {
-      title: "Apps Interface",
-      img: "desktop-outline",
+      title: "Responsive Design",
+      img: "phone-portrait-sharp",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Responsive Designs that works in all types of devices with different screen sizes along with ensuring the quality animations and transitions.",
     },
     {
-      title: "Graphics design",
-      img: "desktop-outline",
+      title: "DataBase Management",
+      img: "logo-firebase",
       comment:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit voluptates saepe alias mollitia minima.",
+        "Implementation of DataBases like MongoDB and Firebase that offer the flexibility and speed to market for various web applications.",
     },
   ]);
 
@@ -55,7 +55,8 @@ function Service_Section() {
         {services.map((val, index) => {
           return (
             <div key={index} className="service-box">
-              <ion-icon name="desktop-outline" class="service-icon" ></ion-icon>
+              <ion-icon name={val.img} class="service-icon" ></ion-icon>
+              {/* <img src="img/icons/node-js.svg" className="service-icon" alt="web" /> */}
               <h3>{val.title}</h3>
               <p>{val.comment}</p>
             </div>
