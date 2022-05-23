@@ -38,7 +38,7 @@ function Bio_Section() {
           <br />
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non oditofficiis vitae blanditiis nesciunt</p>
           <div className="bio-data-stats">
-            {skillset.map((val, index) => <Progress_Bar key={index} title={val.lang} progress={val.prog} />)}
+            {skillset.map((val, ind) => <Progress_Bar key={ind} title={val.lang} progress={val.prog} />)}
           </div>
           <div className="biodata-btn"><a href="#" className="btn">Download CV</a> </div>
         </div>

@@ -62,7 +62,7 @@ function Portfolio_Section() {
 
       <div className="container grid grid-three-column portfolio-images">
         {projects.filter(val => val.type.includes(type)).map((val, index) =>{
-          return <Projects key={index} img={val.img} link={val.link} index={index} />
+          return (<Projects key={index} img={val.img} link={val.link} index={index} />)
         })}
       </div>
 

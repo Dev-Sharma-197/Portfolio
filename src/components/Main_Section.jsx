@@ -5,12 +5,12 @@ function Main_Section() {
   // Creating Sticky Navbar
   const heroSection = useRef()
   useEffect (()=>{
-    const observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(  
       (entries) => {
         const [ent] = entries;
-        !ent.isIntersecting
-        ? document.body.classList.add("sticky")
-        : document.body.classList.remove("sticky");
+        ent.isIntersecting
+        ? document.body.classList.remove("sticky")
+        : document.body.classList.add("sticky");
       },{ root: null, threshold: 0, rootMargin: "-8%" }
     );
     observer.observe(heroSection.current)

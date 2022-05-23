@@ -705,8 +705,8 @@ li {
 
 .scrollToTop {
   position: fixed;
-  right: 3%;
-  bottom: 5%;
+  right: 5%;
+  bottom: 9%;
   z-index: 9;
 }
 
@@ -777,7 +777,7 @@ li {
   }
   .mobile-nav-icon {
     width: 5rem;
-    height: 5rem;
+    height: 4rem;
     color: var(--black);
   }
   .navbar {
@@ -903,10 +903,7 @@ li {
   .section-biodata .bio-image img {
     width: 50%;
   }
-  
-  
 }
-
 
 /* Below 560px */
 @media (max-width: 35em) {

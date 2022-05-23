@@ -5,15 +5,15 @@ function Navbar() {
   const [click, setClick] = useState("");
 
   // Handling Responsive Navbar functions
-  const handleMenu = () => setClick("nActive");
-  const handleClose = () => setClick("");
+  const handleMenu = () => {setClick("nActive"); document.body.classList.add("sticky");}
+  const handleClose = () => {setClick(""); document.body.classList.remove("sticky");}
   const handleSticky = () => {
-    document.body.classList.remove("sticky")
     setClick("")
+    setTimeout(() => {document.body.classList.remove("sticky");}, 1000);
   }
   return (
     <>
-    <div className="scroll"></div>
+    <div className="scroll"/>
     <header id="header" className={`header ${click}`} >
       <p className="my_title">Mern devloper</p>
       <nav className="navbar">
