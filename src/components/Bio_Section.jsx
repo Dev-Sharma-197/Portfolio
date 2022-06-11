@@ -28,6 +28,7 @@ function Bio_Section() {
   return (
     <section className="section-biodata section">
       <div className="container grid grid-two-column">
+        {/* bio left side */}
         <div className="bio-image">
           <img src={process.env.PUBLIC_URL + "img/biodata-min.jpg"} alt="my bio image" />
         </div>

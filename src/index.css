@@ -338,7 +338,6 @@ li {
 
 /* ******************** Portfolio section ****************** */
 .section-portfolio {
-  background: var(--bg);
   transition: all 0.7s linear;
 }
 
@@ -426,6 +425,7 @@ li {
 /* ********* Service Section *********** */
 
 .section-services {
+  background: var(--bg);
   transition: all 0.7s linear;
 }
 
@@ -487,6 +487,84 @@ li {
   text-transform: capitalize;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+
+/* ********** Resume Section *********** */
+
+.section-resume {
+  background: var(--bg);
+}
+
+.resume-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-img img {
+  width: 80%;
+  box-shadow: -2rem 2rem 0 0 var(--helper);
+  /* box-shadow: var(--shadpw) */
+}
+
+.resume-para {
+  font-size: 2.4rem;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: var(--heading);
+}
+
+.resume-data-subsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.8rem;
+  margin-top: 4.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid var(--para-tint);
+}
+
+.resume-data-left .grid {
+  gap: 1.5rem;
+}
+
+.resume-data-left .grid p,
+.resume-data-right p {
+  font-size: 1.4rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resume-data-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.resume-data-right .resume-data-button {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--helper);
+  padding: 0.3rem 1rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.resume-data-bottom-subsection {
+  margin-top: 4.8rem;
+}
+
+.resume-data-bottom-subsection .margin-small {
+  margin-top: 1.8rem;
+}
+
+.resume-data-bottom-subsection .resume-data-button {
+  width: 80%;
 }
 
 /* ********** Testimony section ********** */
@@ -883,6 +961,10 @@ li {
     font-size: 1.3rem;
   }
 
+  .section-resume .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
   .hero-para {
     margin-top: 2rem;
   }
@@ -941,18 +1023,11 @@ li {
 
   .resume-data-right .resume-data-button,
   .resume-data-button-subsection {
-    min-width: 30%;
+    max-width: fit-content;
   }
 
   .resume-data-subsection .resume-data-left .grid-two-column {
     grid-template-columns: 1fr;
-  }
-
-  .resume-data-right {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2.4rem;
   }
 
   .section-freelancing h2 {
@@ -964,7 +1039,7 @@ li {
   }
   
   .contact-container .grid-two-column {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .section-contact-main input[type="submit"] {
